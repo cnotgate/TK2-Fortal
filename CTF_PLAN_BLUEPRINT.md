@@ -1,5 +1,5 @@
 # 📋 Blueprint CTF: Android Mobile Forensics (Level: Medium)
-## Kasus: *The Smishing & Banking Dropper*
+## Kasus: *A Million Rupiah Mistake*
 
 Dokumen ini merupakan perencanaan teknis komprehensif untuk challenge CTF kategori **Android Mobile Forensics** tingkat kesulitan **Sedang (Medium)**, yang diselesaikan menggunakan tool **ALEAPP (Android Logs Events And Protobuf Parser)**.
 
@@ -7,7 +7,7 @@ Dokumen ini merupakan perencanaan teknis komprehensif untuk challenge CTF katego
 
 ## 1. Narasi Kasus (Case Scenario)
 
-> **Judul Kasus:** Operasi Pembobolan Rekening: Jejak SMS Berujung Petaka  
+> **Judul Kasus:** A Million Rupiah Mistake  
 > **Nama Korban:** Budi Santoso (`+6281311223344`)  
 > **Model Perangkat:** Google Pixel (Android OS)  
 > **Tanggal Kejadian:** 28 September 2026 (UTC)  

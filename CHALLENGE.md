@@ -1,4 +1,4 @@
-# 📱 CTF Challenge: Jejak SMS Berujung Petaka (The Smishing & Banking Dropper)
+# 📱 CTF Challenge: A Million Rupiah Mistake
 
 - **Kategori:** Mobile Forensics (Android)
 - **Tingkat Kesulitan:** Medium

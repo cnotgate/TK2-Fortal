@@ -1,8 +1,8 @@
-# 🛡️ Official Write-up & Solution Guide: Jejak SMS Berujung Petaka
+# 🛡️ Official Write-up & Solution Guide: A Million Rupiah Mistake
 
 ## CTF Kategori: Android Mobile Forensics (Level: Medium)
 
-Dokumen ini merupakan panduan solusi resmi (_Official Solution Walkthrough_) untuk challenge investigasi **"Jejak SMS Berujung Petaka (The Smishing & Banking Dropper)"**.
+Dokumen ini merupakan panduan solusi resmi (_Official Solution Walkthrough_) untuk challenge investigasi **"A Million Rupiah Mistake"**.
 
 ---
 

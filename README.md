@@ -1,4 +1,4 @@
-# Android Mobile Forensics CTF — Jejak SMS Berujung Petaka (The Smishing & Banking Dropper)
+# Android Mobile Forensics CTF — A Million Rupiah Mistake
 
 ![Category](https://img.shields.io/badge/Category-Mobile%20Forensics-blue)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange)
@@ -13,7 +13,7 @@ Tantangan Capture The Flag (CTF) kategori **Digital Forensics & Incident Respons
 
 Korban (**Budi Santoso**) melapor bahwa rekening bank miliknya mengalami transaksi transfer ilegal sebesar Rp 15.000.000 tanpa persetujuannya. Korban bersikukuh bahwa ia tidak pernah memberikan kode One-Time Password (OTP) kepada siapapun, tidak menerima notifikasi pop-up OTP di layar ponselnya, dan tidak melihat adanya aplikasi mencurigakan baru di daftar aplikasi ponselnya.
 
-Investigator DFIR melakukan *triage acquisition* terhadap partisi data perangkat Android korban (`evidence.zip`). Analis ditugaskan untuk merekonstruksi rantai serangan (*attack chain*), mulai dari vektor smishing awal, pengunduhan dropper perbankan, instalasi dan persistensi malware, hingga metode pencegatan (*interception*) dan eksfiltrasi data otentikasi.
+Investigator DFIR melakukan _triage acquisition_ terhadap partisi data perangkat Android korban (`evidence.zip`). Analis ditugaskan untuk merekonstruksi rantai serangan (_attack chain_), mulai dari vektor smishing awal, pengunduhan dropper perbankan, instalasi dan persistensi malware, hingga metode pencegatan (_interception_) dan eksfiltrasi data otentikasi.
 
 ---
 
@@ -42,6 +42,7 @@ Investigator DFIR melakukan *triage acquisition* terhadap partisi data perangkat
   ```
 
 ### Artefak Android yang Diuji:
+
 1. **SMS & MMS Database:** `data/data/com.android.providers.telephony/databases/mmssms.db`
 2. **Chrome History Database:** `data/data/com.android.chrome/app_chrome/Default/History`
 3. **Package Manager State:** `data/system/packages.xml` & `data/system/packages.list`
@@ -54,6 +55,7 @@ Investigator DFIR melakukan *triage acquisition* terhadap partisi data perangkat
 Tantangan ini dirancang agar dapat diselesaikan 100% menggunakan **ALEAPP**.
 
 ### 1. Instalasi ALEAPP
+
 ```bash
 git clone https://github.com/abrignoni/ALEAPP.git
 cd ALEAPP
@@ -61,13 +63,17 @@ pip install -r requirements.txt
 ```
 
 ### 2. Eksekusi Analisis
+
 Jalankan ALEAPP terhadap `evidence.zip`:
+
 ```bash
 python aleapp.py -t zip -i /path/ke/evidence.zip -o /path/ke/output_folder
 ```
 
 ### 3. Tinjau Laporan HTML
+
 Buka berkas `index.html` pada folder hasil keluaran menggunakan browser untuk memeriksa kategori:
+
 - **Chrome -> Chrome Downloads**
 - **SMS & MMS -> SMS Messages**
 - **Application Interaction -> Usage Stats**
@@ -84,6 +90,7 @@ python build_evidence.py
 ```
 
 Skrip akan secara otomatis:
+
 1. Membuat skema basis data SQLite (`mmssms.db`, `History`) yang valid.
 2. Membentuk file XML sistem Android yang tepat (`packages.xml`, format versi Android 10+).
 3. Menyusun binary log protobuf / usage stats.

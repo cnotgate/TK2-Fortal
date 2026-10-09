@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 CTF Evidence Generator - Android Mobile Forensics (Medium)
-Scenario: The Smishing & Banking Dropper (Anti-Forensics & Cover-up)
+Scenario: A Million Rupiah Mistake (The Smishing & Banking Dropper)
 
 This script generates synthetic, authentic Android forensic artifacts formatted
 specifically for parsing by ALEAPP (Android Logs Events And Protobuf Parser).
