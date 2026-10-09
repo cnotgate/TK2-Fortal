@@ -25,51 +25,23 @@ Sebagai analis DFIR, tugas Anda adalah melakukan analisis forensik terhadap citr
 > **Catatan Format Pengiriman:**  
 > Jawaban tidak menggunakan format pembungkus flag (tanpa `FLAG{...}`). Masukkan jawaban sesuai dengan format yang diminta pada masing-masing butir soal secara presisi.
 
-### 1. Initial Vector (Tautan Muatan Asli)
+1. Korban menerima pesan teks mencurigakan sesaat sebelum insiden terjadi. Berdasarkan analisis tautan pada pesan tersebut, apa URL pengunduhan langsung (_direct download link_) dari muatan (_payload_) yang dituju?
+   - **Format:** URL lengkap (termasuk protokol, contoh: `https://domain.com/path/file.apk`)
 
-Korban menerima pesan teks mencurigakan sesaat sebelum insiden terjadi. Berdasarkan analisis tautan pada pesan tersebut, apa URL pengunduhan langsung (_direct download link_) dari muatan (_payload_) yang dituju?
+2. Kapan (UTC) berkas aplikasi berbahaya tersebut selesai diunduh ke perangkat korban?
+   - **Format:** `YYYY-MM-DD HH:MM:SS` (contoh: `2026-01-15 14:30:25`)
 
-- **Format:** URL lengkap (termasuk protokol, contoh: `https://domain.com/path/file.apk`)
+3. Setelah berkas diunduh, sebuah aplikasi berbahaya berhasil dipasang di perangkat. Apa nama paket (_package name_) dari aplikasi tersebut?
+   - **Format:** String nama paket lengkap (contoh: `com.example.appname`)
 
----
+4. Kapan (UTC) aplikasi berbahaya tersebut pertama kali aktif dijalankan oleh pengguna di perangkat?
+   - **Format:** `YYYY-MM-DD HH:MM:SS` (contoh: `2026-01-15 14:30:25`)
 
-### 2. Dropper Delivery (Waktu Keberhasilan Unduhan)
+5. Pelaku berhasil mengeksekusi transaksi ilegal dengan menyusup dan mencuri kode otentikasi perbankan milik korban. Berapa kode OTP yang berhasil dicuri tersebut?
+   - **Format:** 6 digit angka (contoh: `123456`)
 
-Kapan (UTC) berkas aplikasi berbahaya tersebut selesai diunduh ke perangkat korban?
-
-- **Format:** `YYYY-MM-DD HH:MM:SS` (contoh: `2026-01-15 14:30:25`)
-
----
-
-### 3. Malware Identity (Identitas Aplikasi Berbahaya)
-
-Setelah berkas diunduh, sebuah aplikasi berbahaya berhasil dipasang di perangkat. Apa nama paket (_package name_) dari aplikasi tersebut?
-
-- **Format:** String nama paket lengkap (contoh: `com.example.appname`)
-
----
-
-### 4. Execution Time (Waktu Eksekusi Pertama)
-
-Kapan (UTC) aplikasi berbahaya tersebut pertama kali aktif dijalankan oleh pengguna di perangkat?
-
-- **Format:** `YYYY-MM-DD HH:MM:SS` (contoh: `2026-01-15 14:30:25`)
-
----
-
-### 5. Compromised OTP (Nilai Transaksi Kritis)
-
-Pelaku berhasil mengeksekusi transaksi ilegal dengan menyusup dan mencuri kode otentikasi perbankan milik korban. Berapa kode OTP yang berhasil dicuri tersebut?
-
-- **Format:** 6 digit angka (contoh: `123456`)
-
----
-
-### 6. Exfiltration Destination (Tujuan Eksfiltrasi Data)
-
-Ke nomor telepon mana data otentikasi hasil pencurian tersebut dikirimkan oleh malware?
-
-- **Format:** Nomor telepon internasional lengkap dengan tanda tambah (contoh: `+6281234567890`)
+6. Ke nomor telepon mana data otentikasi hasil pencurian tersebut dikirimkan oleh malware?
+   - **Format:** Nomor telepon internasional lengkap dengan tanda tambah (contoh: `+6281234567890`)
 
 ---
 

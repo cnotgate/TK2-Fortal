@@ -55,7 +55,7 @@ Peserta dapat memproses berkas barang bukti `evidence.zip` menggunakan tool **AL
 
 ## 3. Pembahasan Soal Langkah demi Langkah (Step-by-Step Walkthrough)
 
-### 🔍 Soal 1: Initial Vector (Tautan Muatan Asli)
+### 🔍 Soal 1
 
 - **Pertanyaan:**  
   _Korban menerima pesan teks mencurigakan sesaat sebelum insiden terjadi. Berdasarkan analisis tautan pada pesan tersebut, apa URL pengunduhan langsung (direct download link) dari muatan (payload) yang dituju?_
@@ -79,7 +79,7 @@ Peserta dapat memproses berkas barang bukti `evidence.zip` menggunakan tool **AL
 
 ---
 
-### 🔍 Soal 2: Dropper Delivery (Waktu Keberhasilan Unduhan)
+### 🔍 Soal 2
 
 - **Pertanyaan:**  
   _Kapan (UTC) berkas aplikasi berbahaya tersebut selesai diunduh ke perangkat korban?_
@@ -100,7 +100,7 @@ Peserta dapat memproses berkas barang bukti `evidence.zip` menggunakan tool **AL
 
 ---
 
-### 🔍 Soal 3: Malware Identity (Identitas Aplikasi Berbahaya)
+### 🔍 Soal 3
 
 - **Pertanyaan:**  
   _Setelah berkas diunduh, sebuah aplikasi berbahaya berhasil dipasang di perangkat. Apa nama paket (package name) dari aplikasi tersebut?_
@@ -119,7 +119,7 @@ Peserta dapat memproses berkas barang bukti `evidence.zip` menggunakan tool **AL
 
 ---
 
-### 🔍 Soal 4: Execution Time (Waktu Eksekusi Pertama)
+### 🔍 Soal 4
 
 - **Pertanyaan:**  
   _Kapan (UTC) aplikasi berbahaya tersebut pertama kali aktif dijalankan oleh pengguna di perangkat?_
@@ -138,7 +138,7 @@ Peserta dapat memproses berkas barang bukti `evidence.zip` menggunakan tool **AL
 
 ---
 
-### 🔍 Soal 5: Compromised OTP (Nilai Transaksi Kritis)
+### 🔍 Soal 5
 
 - **Pertanyaan:**  
   _Pelaku berhasil mengeksekusi transaksi ilegal dengan menyusup dan mencuri kode otentikasi perbankan milik korban. Berapa kode OTP yang berhasil dicuri tersebut?_
@@ -167,7 +167,7 @@ Peserta dapat memproses berkas barang bukti `evidence.zip` menggunakan tool **AL
 
 ---
 
-### 🔍 Soal 6: Exfiltration Destination (Tujuan Eksfiltrasi Data)
+### 🔍 Soal 6
 
 - **Pertanyaan:**  
   _Ke nomor telepon mana data otentikasi hasil pencurian tersebut dikirimkan oleh malware?_
