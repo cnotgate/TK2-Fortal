@@ -23,7 +23,6 @@ Investigator DFIR melakukan _triage acquisition_ terhadap partisi data perangkat
 ├── CHALLENGE.md           # Lembar soal resmi untuk peserta CTF
 ├── WRITEUP.md             # Panduan investigasi lengkap & kunci jawaban resmi (organizer)
 ├── evidence.zip           # Berkas barang bukti digital (triage artifact) untuk peserta
-├── CTF_PLAN_BLUEPRINT.md  # Blueprint teknis perancangan artefak forensik
 ├── .gitignore             # Konfigurasi ignore file temporary dan cache
 └── README.md              # Dokumentasi utama repositori
 ```

@@ -18,6 +18,7 @@ venv.bak/
 build_temp/
 aleapp_test_output/
 build_evidence.py
+CTF_PLAN_BLUEPRINT.md
 *.log
 
 # Operating System files
