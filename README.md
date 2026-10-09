@@ -23,7 +23,6 @@ Investigator DFIR melakukan _triage acquisition_ terhadap partisi data perangkat
 ├── CHALLENGE.md           # Lembar soal resmi untuk peserta CTF
 ├── WRITEUP.md             # Panduan investigasi lengkap & kunci jawaban resmi (organizer)
 ├── evidence.zip           # Berkas barang bukti digital (triage artifact) untuk peserta
-├── build_evidence.py      # Skrip Python pembuat berkas barang bukti (deterministik)
 ├── CTF_PLAN_BLUEPRINT.md  # Blueprint teknis perancangan artefak forensik
 ├── .gitignore             # Konfigurasi ignore file temporary dan cache
 └── README.md              # Dokumentasi utama repositori
@@ -78,23 +77,6 @@ Buka berkas `index.html` pada folder hasil keluaran menggunakan browser untuk me
 - **SMS & MMS -> SMS Messages**
 - **Application Interaction -> Usage Stats**
 - **Installed Applications -> Package and Shared User / Permissions**
-
----
-
-## 🔧 Membangun Ulang Berkas Barang Bukti (Reproducibility)
-
-Jika ingin memodifikasi timestamp, nomor telepon, atau meng-generate ulang `evidence.zip`, jalankan:
-
-```bash
-python build_evidence.py
-```
-
-Skrip akan secara otomatis:
-
-1. Membuat skema basis data SQLite (`mmssms.db`, `History`) yang valid.
-2. Membentuk file XML sistem Android yang tepat (`packages.xml`, format versi Android 10+).
-3. Menyusun binary log protobuf / usage stats.
-4. Mengemas seluruh artefak ke dalam `evidence.zip` dengan entry direktori eksplisit.
 
 ---
 

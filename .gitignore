@@ -17,6 +17,7 @@ venv.bak/
 # ALEAPP test outputs and build temps
 build_temp/
 aleapp_test_output/
+build_evidence.py
 *.log
 
 # Operating System files
