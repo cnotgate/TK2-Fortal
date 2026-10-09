@@ -22,6 +22,8 @@ Investigator DFIR melakukan _triage acquisition_ terhadap partisi data perangkat
 ```text
 ├── CHALLENGE.md           # Lembar soal resmi untuk peserta CTF
 ├── WRITEUP.md             # Panduan investigasi lengkap & kunci jawaban resmi (organizer)
+├── SLIDES.html            # Slide presentasi interaktif walkthrough solusi (bisa langsung dibuka di browser)
+├── SLIDES.md              # Slide presentasi format Markdown (Marp-ready)
 ├── evidence.zip           # Berkas barang bukti digital (triage artifact) untuk peserta
 ├── .gitignore             # Konfigurasi ignore file temporary dan cache
 └── README.md              # Dokumentasi utama repositori
