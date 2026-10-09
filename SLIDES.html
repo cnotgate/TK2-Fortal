@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,6 +41,7 @@
             height: 4px;
             background: #1f2937;
         }
+
         .progress-bar {
             height: 100%;
             width: 0%;
@@ -78,8 +80,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Slide Header */
@@ -176,7 +185,8 @@
             gap: 0.5rem;
         }
 
-        .info-card p, .info-card li {
+        .info-card p,
+        .info-card li {
             font-size: 0.98rem;
             color: #d1d5db;
             line-height: 1.6;
@@ -257,7 +267,8 @@
             font-size: 0.95rem;
         }
 
-        table.summary-table th, table.summary-table td {
+        table.summary-table th,
+        table.summary-table td {
             border: 1px solid var(--border-color);
             padding: 0.75rem 1rem;
             text-align: left;
@@ -333,6 +344,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="progress-bar-container">
@@ -352,8 +364,12 @@
                 <h1 class="title">A Million Rupiah Mistake</h1>
                 <p class="subtitle">Official Solution & Forensic Walkthrough<br>Android Mobile Forensics CTF</p>
                 <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center;">
-                    <span class="slide-tag" style="color: var(--accent-orange); border-color: rgba(251, 146, 60, 0.4); background: rgba(251, 146, 60, 0.1);">Level: Medium</span>
-                    <span class="slide-tag" style="color: var(--accent-green); border-color: rgba(52, 211, 153, 0.4); background: rgba(52, 211, 153, 0.1);">Tool: ALEAPP</span>
+                    <span class="slide-tag"
+                        style="color: var(--accent-orange); border-color: rgba(251, 146, 60, 0.4); background: rgba(251, 146, 60, 0.1);">Level:
+                        Medium</span>
+                    <span class="slide-tag"
+                        style="color: var(--accent-green); border-color: rgba(52, 211, 153, 0.4); background: rgba(52, 211, 153, 0.1);">Tool:
+                        ALEAPP</span>
                     <span class="slide-tag">No FLAG Format</span>
                 </div>
             </div>
@@ -378,21 +394,27 @@
                         <ul>
                             <li><strong>Nama Korban:</strong> Budi Santoso (<code>+6281311223344</code>)</li>
                             <li><strong>Waktu Kejadian:</strong> 28 September 2026</li>
-                            <li><strong>Dampak:</strong> Saldo rekening bank terkuras <strong>Rp 15.000.000</strong> melalui transfer ilegal.</li>
-                            <li><strong>Barang Bukti:</strong> Triage dump partisi Android (<code>evidence.zip</code>).</li>
+                            <li><strong>Dampak:</strong> Saldo rekening bank terkuras <strong>Rp 15.000.000</strong>
+                                melalui transfer ilegal.</li>
+                            <li><strong>Barang Bukti:</strong> Triage dump partisi Android (<code>evidence.zip</code>).
+                            </li>
                         </ul>
                     </div>
                     <div class="info-card highlight">
                         <h3>❓ Tiga Anomali yang Membingungkan Korban</h3>
                         <ul>
-                            <li><strong>Tanpa Ikon Baru:</strong> Korban mengira instalasi gagal karena tidak ada ikon baru di layar ponsel.</li>
-                            <li><strong>Tanpa Notifikasi OTP:</strong> Layar ponsel sama sekali tidak memunculkan notifikasi pop-up SMS OTP dari bank.</li>
-                            <li><strong>Tanpa Interaksi Pengalihan:</strong> Korban bersikukuh tidak pernah memberitahukan OTP kepada siapa pun.</li>
+                            <li><strong>Tanpa Ikon Baru:</strong> Korban mengira instalasi gagal karena tidak ada ikon
+                                baru di layar ponsel.</li>
+                            <li><strong>Tanpa Notifikasi OTP:</strong> Layar ponsel sama sekali tidak memunculkan
+                                notifikasi pop-up SMS OTP dari bank.</li>
+                            <li><strong>Tanpa Interaksi Pengalihan:</strong> Korban bersikukuh tidak pernah
+                                memberitahukan OTP kepada siapa pun.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="info-card" style="border-left: 4px solid var(--accent-blue);">
-                    <p>🎯 <strong>Misi DFIR:</strong> Merekonstruksi kronologi serangan dari awal pengiriman SMS jebakan hingga eksfiltrasi data menggunakan artefak Android.</p>
+                    <p>🎯 <strong>Misi DFIR:</strong> Merekonstruksi kronologi serangan dari awal pengiriman SMS jebakan
+                        hingga eksfiltrasi data menggunakan artefak Android.</p>
                 </div>
             </div>
         </div>
@@ -410,27 +432,33 @@
                 <div class="chain-box">
                     <div class="chain-step">
                         <span class="step-num">1</span>
-                        <div><strong>Smishing SMS (09:15 UTC):</strong> Pelaku mengirim tautan jebakan berkedok peringatan BCA dengan parameter Base64.</div>
+                        <div><strong>Smishing SMS (09:15 UTC):</strong> Pelaku mengirim tautan jebakan berkedok
+                            peringatan BCA dengan parameter Base64.</div>
                     </div>
                     <div class="chain-step">
                         <span class="step-num">2</span>
-                        <div><strong>Dropper Delivery (09:17 UTC):</strong> Korban mengakses tautan via Chrome dan mengunduh berkas <code>BCA2026.apk</code>.</div>
+                        <div><strong>Dropper Delivery (09:17 UTC):</strong> Korban mengakses tautan via Chrome dan
+                            mengunduh berkas <code>BCA2026.apk</code>.</div>
                     </div>
                     <div class="chain-step">
                         <span class="step-num">3</span>
-                        <div><strong>Instalasi & Stealth (09:20 UTC):</strong> Malware terpasang dan menyembunyikan ikon peluncur melalui <code>&lt;disabled-components&gt;</code>.</div>
+                        <div><strong>Instalasi & Stealth (09:20 UTC):</strong> Malware terpasang dan menyembunyikan ikon
+                            peluncur melalui <code>&lt;disabled-components&gt;</code>.</div>
                     </div>
                     <div class="chain-step">
                         <span class="step-num">4</span>
-                        <div><strong>Eksekusi Pertama (09:21 UTC):</strong> Korban membuka aplikasi, malware mengaktifkan background service penerima SMS.</div>
+                        <div><strong>Eksekusi Pertama (09:21 UTC):</strong> Korban membuka aplikasi, malware
+                            mengaktifkan background service penerima SMS.</div>
                     </div>
                     <div class="chain-step">
                         <span class="step-num">5</span>
-                        <div><strong>Intersepsi Senyap (09:25 UTC):</strong> SMS OTP dari bank dibaca langsung (<code>read=1, seen=0</code>) sebelum notifikasi muncul.</div>
+                        <div><strong>Intersepsi Senyap (09:25 UTC):</strong> SMS OTP dari bank dibaca langsung
+                            (<code>read=1, seen=0</code>) sebelum notifikasi muncul.</div>
                     </div>
                     <div class="chain-step">
                         <span class="step-num">6</span>
-                        <div><strong>Eksfiltrasi Tersembunyi (09:25 UTC):</strong> Malware mengirim data OTP via SMS ke nomor pelaku berkedok <code>[SYS_CRASH_REPORT]</code>.</div>
+                        <div><strong>Eksfiltrasi Tersembunyi (09:25 UTC):</strong> Malware mengirim data OTP via SMS ke
+                            nomor pelaku berkedok <code>[SYS_CRASH_REPORT]</code>.</div>
                     </div>
                 </div>
             </div>
@@ -482,13 +510,18 @@
             <div class="content-body">
                 <div class="info-card">
                     <h3>Pemeriksaan Artefak: SMS Messages (<code>SMS_Messages.html</code>)</h3>
-                    <p>Pada pukul <strong>2026-09-28 09:15:22 UTC</strong>, terdapat pesan masuk dari pengirim <code>+6281299887766</code>:</p>
-                    <div class="code-box">[BCA Alert] Terdeteksi upaya login tidak wajar pada akun Anda. Segera amankan & perbarui proteksi m-Banking melalui: https://bca-sec.link/check?target=aHR0cHM6Ly9iY2EtbW9iaWxlLWFsZXJ0LnNpdGUvQkNBMjAyNi5hcGs=</div>
+                    <p>Pada pukul <strong>2026-09-28 09:15:22 UTC</strong>, terdapat pesan masuk dari pengirim
+                        <code>+6281299887766</code>:
+                    </p>
+                    <div class="code-box">[BCA Alert] Terdeteksi upaya login tidak wajar pada akun Anda. Segera amankan
+                        & perbarui proteksi m-Banking melalui:
+                        https://bca-sec.link/check?target=aHR0cHM6Ly9iY2EtbW9iaWxlLWFsZXJ0LnNpdGUvQkNBMjAyNi5hcGs=</div>
                 </div>
                 <div class="info-card success">
                     <h3>💡 Analisis Obfuscation (Base64 Decoding)</h3>
                     <p>Parameter gerbang <code>target</code> dikaburkan dengan Base64. Lakukan decoding:</p>
-                    <div class="code-box">echo "aHR0cHM6Ly9iY2EtbW9iaWxlLWFsZXJ0LnNpdGUvQkNBMjAyNi5hcGs=" | base64 -d</div>
+                    <div class="code-box">echo "aHR0cHM6Ly9iY2EtbW9iaWxlLWFsZXJ0LnNpdGUvQkNBMjAyNi5hcGs=" | base64 -d
+                    </div>
                     <div style="margin-top: 0.5rem;">
                         <strong>Jawaban Resmi:</strong><br>
                         <span class="answer-badge">https://bca-mobile-alert.site/BCA2026.apk</span>
@@ -511,16 +544,33 @@
                     <h3>Pemeriksaan Artefak: Chromium Downloads (<code>Downloads.html</code>)</h3>
                     <p>Buka laporan unduhan Chrome untuk melihat transaksi pengunduhan berkas APK:</p>
                     <table class="summary-table" style="margin-top: 0.8rem;">
-                        <tr><th>Kolom</th><th>Nilai Forensik</th></tr>
-                        <tr><td>Target Path</td><td><code>/storage/emulated/0/Download/BCA2026.apk</code></td></tr>
-                        <tr><td>Start Time</td><td><code>2026-09-28 09:17:35+00:00</code></td></tr>
-                        <tr><td>End Time (Selesai)</td><td><code>2026-09-28 09:17:45+00:00</code></td></tr>
-                        <tr><td>State / Opened</td><td><code>1 (Complete) / Yes</code></td></tr>
+                        <tr>
+                            <th>Kolom</th>
+                            <th>Nilai Forensik</th>
+                        </tr>
+                        <tr>
+                            <td>Target Path</td>
+                            <td><code>/storage/emulated/0/Download/BCA2026.apk</code></td>
+                        </tr>
+                        <tr>
+                            <td>Start Time</td>
+                            <td><code>2026-09-28 09:17:35+00:00</code></td>
+                        </tr>
+                        <tr>
+                            <td>End Time (Selesai)</td>
+                            <td><code>2026-09-28 09:17:45+00:00</code></td>
+                        </tr>
+                        <tr>
+                            <td>State / Opened</td>
+                            <td><code>1 (Complete) / Yes</code></td>
+                        </tr>
                     </table>
                 </div>
                 <div class="info-card success">
                     <h3>💡 Catatan Forensik Anti-Penghapusan</h3>
-                    <p>Meskipun pelaku menghapus fisik berkas <code>BCA2026.apk</code> dari folder Download korban, basis data SQLite Chrome tetap mencatat riwayat dan stempel waktu selesai unduh secara permanen.</p>
+                    <p>Meskipun pelaku menghapus fisik berkas <code>BCA2026.apk</code> dari folder Download korban,
+                        basis data SQLite Chrome tetap mencatat riwayat dan stempel waktu selesai unduh secara permanen.
+                    </p>
                     <div style="margin-top: 0.5rem;">
                         <strong>Jawaban Resmi:</strong><br>
                         <span class="answer-badge">2026-09-28 09:17:45</span>
@@ -543,18 +593,21 @@
                     <h3>Pemeriksaan Artefak: Installed Apps (<code>package_info.html</code>)</h3>
                     <p>Bandingkan waktu instalasi aplikasi pada tabel:</p>
                     <ul>
-                        <li>Aplikasi resmi (<code>com.bca</code>, <code>com.whatsapp</code>) terpasang lama (tahun 2024).</li>
+                        <li>Aplikasi resmi (<code>com.bca</code>, <code>com.whatsapp</code>) terpasang lama (tahun
+                            2024).</li>
                         <li>Aplikasi baru terpasang pada saat insiden (<strong>2026-09-28 09:20:10 UTC</strong>):</li>
                     </ul>
-                    <div class="code-box">Package: com.secupdate.banking.bcamobile | Code Path: /data/app/com.secupdate.banking.bcamobile-X91abF2==</div>
+                    <div class="code-box">Package: com.secupdate.banking.bcamobile | Code Path:
+                        /data/app/com.secupdate.banking.bcamobile-X91abF2==</div>
                 </div>
                 <div class="info-card highlight">
                     <h3>🕵️ Rahasia: Mengapa Korban Tidak Melihat Ikon Aplikasi?</h3>
                     <p>Di <code>packages.xml</code>, malware menonaktifkan komponen peluncur utamanya:</p>
                     <div class="code-box">&lt;disabled-components&gt;
-    &lt;item name="com.secupdate.banking.bcamobile.MainActivity" /&gt;
-&lt;/disabled-components&gt;</div>
-                    <p>Hal ini menyembunyikan ikon dari App Drawer Android dan membuatnya berjalan sebagai layanan latar belakang.</p>
+                        &lt;item name="com.secupdate.banking.bcamobile.MainActivity" /&gt;
+                        &lt;/disabled-components&gt;</div>
+                    <p>Hal ini menyembunyikan ikon dari App Drawer Android dan membuatnya berjalan sebagai layanan latar
+                        belakang.</p>
                     <div style="margin-top: 0.5rem;">
                         <strong>Jawaban Resmi:</strong><br>
                         <span class="answer-badge">com.secupdate.banking.bcamobile</span>
@@ -575,16 +628,31 @@
             <div class="content-body">
                 <div class="info-card">
                     <h3>Pemeriksaan Artefak: Usage Stats (<code>Usage_Stats.html</code>)</h3>
-                    <p>Tapis (filter) tabel berdasarkan nama paket <code>com.secupdate.banking.bcamobile</code> pada event log:</p>
+                    <p>Tapis (filter) tabel berdasarkan nama paket <code>com.secupdate.banking.bcamobile</code> pada
+                        event log:</p>
                     <table class="summary-table" style="margin-top: 0.8rem;">
-                        <tr><th>Timestamp (UTC)</th><th>Event Type</th><th>Class</th></tr>
-                        <tr style="background: rgba(56, 189, 248, 0.1);"><td><code>2026-09-28 09:21:05+00:00</code></td><td><strong>ACTIVITY_RESUMED (1)</strong></td><td><code>...AuthActivity</code></td></tr>
-                        <tr><td><code>2026-09-28 09:21:35+00:00</code></td><td><strong>ACTIVITY_PAUSED (2)</strong></td><td><code>...AuthActivity</code></td></tr>
+                        <tr>
+                            <th>Timestamp (UTC)</th>
+                            <th>Event Type</th>
+                            <th>Class</th>
+                        </tr>
+                        <tr style="background: rgba(56, 189, 248, 0.1);">
+                            <td><code>2026-09-28 09:21:05+00:00</code></td>
+                            <td><strong>ACTIVITY_RESUMED (1)</strong></td>
+                            <td><code>...AuthActivity</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>2026-09-28 09:21:35+00:00</code></td>
+                            <td><strong>ACTIVITY_PAUSED (2)</strong></td>
+                            <td><code>...AuthActivity</code></td>
+                        </tr>
                     </table>
                 </div>
                 <div class="info-card success">
                     <h3>💡 Makna Forensik Event</h3>
-                    <p>Status <code>ACTIVITY_RESUMED</code> membuktikan aktivitas antarmuka pertama kali berinteraksi dengan pengguna pada <strong>09:21:05 UTC</strong> selama 30 detik sebelum berpindah ke latar belakang.</p>
+                    <p>Status <code>ACTIVITY_RESUMED</code> membuktikan aktivitas antarmuka pertama kali berinteraksi
+                        dengan pengguna pada <strong>09:21:05 UTC</strong> selama 30 detik sebelum berpindah ke latar
+                        belakang.</p>
                     <div style="margin-top: 0.5rem;">
                         <strong>Jawaban Resmi:</strong><br>
                         <span class="answer-badge">2026-09-28 09:21:05</span>
@@ -607,14 +675,19 @@
                     <h3>Pemeriksaan Artefak: SMS Messages (<code>SMS_Messages.html</code>)</h3>
                     <p>Pada pukul <strong>09:25:30 UTC</strong>, SMS masuk resmi dari bank tercatat:</p>
                     <div class="code-box">Address: BANK_CENTRAL
-Body: PERINGATAN! JANGAN BERIKAN KODE INI KEPADA SIAPAPUN. Kode OTP transaksi transfer Rp 15.000.000 ke rekening 8872192831 adalah 849201. Berlaku 5 menit.</div>
+                        Body: PERINGATAN! JANGAN BERIKAN KODE INI KEPADA SIAPAPUN. Kode OTP transaksi transfer Rp
+                        15.000.000 ke rekening 8872192831 adalah 849201. Berlaku 5 menit.</div>
                     <p style="margin-top: 0.4rem; font-size: 0.9rem; color: var(--accent-orange);">
-                        ⚠️ Status pesan: <code>read = 1</code> dan <code>seen = 0</code>. Malware langsung menandai pesan sudah dibaca via receiver prioritas tinggi agar tidak ada pop-up notifikasi yang muncul di layar korban.
+                        ⚠️ Status pesan: <code>read = 1</code> dan <code>seen = 0</code>. Malware langsung menandai
+                        pesan sudah dibaca via receiver prioritas tinggi agar tidak ada pop-up notifikasi yang muncul di
+                        layar korban.
                     </p>
                 </div>
                 <div class="info-card success">
                     <h3>💡 Validasi Silang dari SMS Keluar (09:25:32 UTC)</h3>
-                    <div class="code-box">[SYS_CRASH_REPORT]::eyJ2aWN0aW0iOiIrNjI4MTMxMTIyMzM0NCIsIm90cCI6Ijg0OTIwMSIsInR4X2lkIjoiVFgtODkwMjMifQ==</div>
+                    <div class="code-box">
+                        [SYS_CRASH_REPORT]::eyJ2aWN0aW0iOiIrNjI4MTMxMTIyMzM0NCIsIm90cCI6Ijg0OTIwMSIsInR4X2lkIjoiVFgtODkwMjMifQ==
+                    </div>
                     <p>Decode JSON: <code>{"victim":"+6281311223344","otp":"849201","tx_id":"TX-89023"}</code></p>
                     <div style="margin-top: 0.5rem;">
                         <strong>Jawaban Resmi:</strong><br>
@@ -638,16 +711,33 @@ Body: PERINGATAN! JANGAN BERIKAN KODE INI KEPADA SIAPAPUN. Kode OTP transaksi tr
                     <h3>Pemeriksaan Artefak: SMS Messages (<code>SMS_Messages.html</code>)</h3>
                     <p>Periksa pesan keluar (<em>Type: Sent</em>) yang dikirim tepat 2 detik setelah OTP diterima:</p>
                     <table class="summary-table" style="margin-top: 0.8rem;">
-                        <tr><th>Kolom</th><th>Data</th></tr>
-                        <tr><td>Date</td><td><code>2026-09-28 09:25:32+00:00</code></td></tr>
-                        <tr><td>Type</td><td><code>Sent</code></td></tr>
-                        <tr><td>Address (Penerima)</td><td><strong style="color: var(--accent-green); font-size: 1.1rem;">+6282133445566</strong></td></tr>
-                        <tr><td>Creator</td><td><code>com.secupdate.banking.bcamobile</code></td></tr>
+                        <tr>
+                            <th>Kolom</th>
+                            <th>Data</th>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td><code>2026-09-28 09:25:32+00:00</code></td>
+                        </tr>
+                        <tr>
+                            <td>Type</td>
+                            <td><code>Sent</code></td>
+                        </tr>
+                        <tr>
+                            <td>Address (Penerima)</td>
+                            <td><strong style="color: var(--accent-green); font-size: 1.1rem;">+6282133445566</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Creator</td>
+                            <td><code>com.secupdate.banking.bcamobile</code></td>
+                        </tr>
                     </table>
                 </div>
                 <div class="info-card success">
                     <h3>💡 Penyamaran Laporan Galat Sistem</h3>
-                    <p>Malware menyamarkan pengiriman pesan pencurian menggunakan awalan <code>[SYS_CRASH_REPORT]</code> untuk mengecoh pemeriksaan sekilas oleh korban atau admin sistem.</p>
+                    <p>Malware menyamarkan pengiriman pesan pencurian menggunakan awalan <code>[SYS_CRASH_REPORT]</code>
+                        untuk mengecoh pemeriksaan sekilas oleh korban atau admin sistem.</p>
                     <div style="margin-top: 0.5rem;">
                         <strong>Jawaban Resmi:</strong><br>
                         <span class="answer-badge">+6282133445566</span>
@@ -675,17 +765,43 @@ Body: PERINGATAN! JANGAN BERIKAN KODE INI KEPADA SIAPAPUN. Kode OTP transaksi tr
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>1</td><td>Initial Vector (Payload URL)</td><td><code>https://bca-mobile-alert.site/BCA2026.apk</code></td></tr>
-                        <tr><td>2</td><td>Dropper Delivery Time</td><td><code>2026-09-28 09:17:45</code></td></tr>
-                        <tr><td>3</td><td>Malware Package Name</td><td><code>com.secupdate.banking.bcamobile</code></td></tr>
-                        <tr><td>4</td><td>First Execution Time</td><td><code>2026-09-28 09:21:05</code></td></tr>
-                        <tr><td>5</td><td>Compromised OTP</td><td><code>849201</code></td></tr>
-                        <tr><td>6</td><td>Exfiltration Phone Number</td><td><code>+6282133445566</code></td></tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Initial Vector (Payload URL)</td>
+                            <td><code>https://bca-mobile-alert.site/BCA2026.apk</code></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dropper Delivery Time</td>
+                            <td><code>2026-09-28 09:17:45</code></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Malware Package Name</td>
+                            <td><code>com.secupdate.banking.bcamobile</code></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>First Execution Time</td>
+                            <td><code>2026-09-28 09:21:05</code></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Compromised OTP</td>
+                            <td><code>849201</code></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Exfiltration Phone Number</td>
+                            <td><code>+6282133445566</code></td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="info-card highlight" style="margin-top: 0.8rem;">
                     <h3>💡 Pelajaran Utama Forensik Digital Android</h3>
-                    <p>Penghapusan berkas fisik oleh penyerang tidak menghilangkan jejak database (SQLite), stempel waktu UsageStats, dan manifest permissions. Melalui ALEAPP, rantai serangan dapat direkonstruksi secara objektif dan akurat.</p>
+                    <p>Penghapusan berkas fisik oleh penyerang tidak menghilangkan jejak database (SQLite), stempel
+                        waktu UsageStats, dan manifest permissions. Melalui ALEAPP, rantai serangan dapat direkonstruksi
+                        secara objektif dan akurat.</p>
                 </div>
             </div>
         </div>
@@ -744,9 +860,9 @@ Body: PERINGATAN! JANGAN BERIKAN KODE INI KEPADA SIAPAPUN. Kode OTP transaksi tr
                 prevSlide();
             } else if (e.key.toLowerCase() === 'f') {
                 if (!document.fullscreenElement) {
-                    document.documentElement.requestFullscreen().catch(() => {});
+                    document.documentElement.requestFullscreen().catch(() => { });
                 } else {
-                    document.exitFullscreen().catch(() => {});
+                    document.exitFullscreen().catch(() => { });
                 }
             }
         });
@@ -754,4 +870,5 @@ Body: PERINGATAN! JANGAN BERIKAN KODE INI KEPADA SIAPAPUN. Kode OTP transaksi tr
         updateSlide();
     </script>
 </body>
+
 </html>
