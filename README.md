@@ -3,7 +3,7 @@
 ![Category](https://img.shields.io/badge/Category-Mobile%20Forensics-blue)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange)
 ![Tool](https://img.shields.io/badge/Primary%20Tool-ALEAPP-brightgreen)
-![Evidence Size](https://img.shields.io/badge/Evidence%20Size-~7%20KB-success)
+![Evidence Size](https://img.shields.io/badge/Evidence%20Size-~10%20KB-success)
 
 Tantangan Capture The Flag (CTF) kategori **Digital Forensics & Incident Response (DFIR) / Android Mobile Forensics** tingkat kesulitan **Sedang (Medium)** yang dirancang untuk dianalisis dan diselesaikan secara menyeluruh menggunakan [ALEAPP (Android Logs Events And Protobuf Parser)](https://github.com/abrignoni/ALEAPP).
 
@@ -32,11 +32,11 @@ Investigator DFIR melakukan _triage acquisition_ terhadap partisi data perangkat
 ## 🛠️ Informasi Berkas Barang Bukti
 
 - **Nama Berkas:** `evidence.zip`
-- **Ukuran:** ~7 KB
+- **Ukuran:** ~10 KB
 - **Format:** Zip Archive berisi struktur direktori Android standar (`data/data/...`, `data/system/...`)
 - **Hash SHA-256:**
   ```text
-  C15A5374E52F6792D00E15732FB4EF548905E62ED3606E9195297583541D65E1
+  6CF093CCA2B97C5724647BFCD7F3FDCE632361790C8C83A3721D40428D25D440
   ```
 
 ### Artefak Android yang Diuji:

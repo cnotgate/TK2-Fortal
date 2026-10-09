@@ -4,7 +4,7 @@
 - **Tingkat Kesulitan:** Medium
 - **Tool Rekomendasi:** [ALEAPP (Android Logs Events And Protobuf Parser)](https://github.com/abrignoni/ALEAPP), CyberChef / Decoder
 - **Berkas Bukti:** `evidence.zip`
-- **SHA-256 Checksum:** `C15A5374E52F6792D00E15732FB4EF548905E62ED3606E9195297583541D65E1`
+- **SHA-256 Checksum:** `6CF093CCA2B97C5724647BFCD7F3FDCE632361790C8C83A3721D40428D25D440`
 
 ---
 

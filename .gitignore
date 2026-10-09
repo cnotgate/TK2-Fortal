@@ -19,6 +19,7 @@ build_temp/
 aleapp_test_output/
 build_evidence.py
 CTF_PLAN_BLUEPRINT.md
+ALEAPP_Output_*/
 *.log
 
 # Operating System files
