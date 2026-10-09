@@ -8,7 +8,7 @@
 
 ---
 
-## 📖 Narasi Kasus (Scenario)
+## Narasi Kasus (Scenario)
 
 Pada pagi hari tanggal 28 September 2026, **Budi Santoso**, seorang nasabah perbankan, menerima sebuah pesan teks mendesak di ponsel Android miliknya yang mengabarkan adanya aktivitas login mencurigakan. Panik dan khawatir rekeningnya diblokir, korban mengikuti petunjuk pada pesan tersebut untuk memperbarui sistem proteksi perbankannya.
 
@@ -20,7 +20,7 @@ Sebagai analis DFIR, tugas Anda adalah melakukan analisis forensik terhadap citr
 
 ---
 
-## 🔍 Pertanyaan Investigasi (Investigation Questions)
+## Pertanyaan Investigasi (Investigation Questions)
 
 > **Catatan Format Pengiriman:**  
 > Jawaban tidak menggunakan format pembungkus flag (tanpa `FLAG{...}`). Masukkan jawaban sesuai dengan format yang diminta pada masing-masing butir soal secara presisi.
@@ -73,7 +73,7 @@ Ke nomor telepon mana data otentikasi hasil pencurian tersebut dikirimkan oleh m
 
 ---
 
-## 💡 Petunjuk Investigasi (Hints)
+## Petunjuk Investigasi (Hints)
 
 1. Periksa riwayat komunikasi teks masuk dan keluar untuk memahami interaksi awal korban dan jalur komunikasi malware.
 2. Pelaku kejahatan siber sering kali menggunakan teknik _gateway redirection_ dan pengaburan _encoding_ untuk menyamarkan tautan langsung file APK berbahaya.
