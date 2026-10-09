@@ -2,7 +2,7 @@
 
 - **Kategori:** Mobile Forensics (Android)
 - **Tingkat Kesulitan:** Medium
-- **Tool Rekomendasi:** [ALEAPP (Android Logs Events And Protobuf Parser)](https://github.com/abrignoni/ALEAPP), CyberChef / Decoder
+- **Tool Rekomendasi:** [ALEAPP (Android Logs Events And Protobuf Parser)](https://github.com/abrignoni/ALEAPP/releases), CyberChef / Decoder
 - **Berkas Bukti:** `evidence.zip`
 - **SHA-256 Checksum:** `6CF093CCA2B97C5724647BFCD7F3FDCE632361790C8C83A3721D40428D25D440`
 

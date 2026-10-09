@@ -52,18 +52,24 @@ Investigator DFIR melakukan _triage acquisition_ terhadap partisi data perangkat
 
 Tantangan ini dirancang agar dapat diselesaikan 100% menggunakan **ALEAPP**.
 
-### 1. Instalasi ALEAPP
+### 1. Unduh ALEAPP
 
-```bash
-git clone https://github.com/abrignoni/ALEAPP.git
-cd ALEAPP
-pip install -r requirements.txt
-```
+Silakan unduh rilis terbaru ALEAPP melalui laman resmi berikut:  
+👉 **[https://github.com/abrignoni/ALEAPP/releases](https://github.com/abrignoni/ALEAPP/releases)**
+
+Tersedia dua opsi penggunaan:
+- **Versi Standalone GUI (`aleappGUI.exe`):** Unduh berkas rilis untuk Windows, lalu jalankan langsung tanpa perlu instalasi dependensi Python.
+- **Versi Source Code (CLI / Python):** Unduh source code dari rilis terbaru, pasang dependensi (`pip install -r requirements.txt`), lalu gunakan antarmuka baris perintah (`aleapp.py`).
 
 ### 2. Eksekusi Analisis
 
-Jalankan ALEAPP terhadap `evidence.zip`:
+#### Opsi A: Menggunakan ALEAPP GUI (Rekomendasi)
+1. Buka `aleappGUI.exe`.
+2. Pada pilihan input, pilih berkas `evidence.zip`.
+3. Tentukan folder output tujuan penyimpanan hasil laporan.
+4. Klik **Process** dan tunggu hingga selesai.
 
+#### Opsi B: Menggunakan ALEAPP CLI
 ```bash
 python aleapp.py -t zip -i /path/ke/evidence.zip -o /path/ke/output_folder
 ```
