@@ -22,9 +22,6 @@ Sebagai analis DFIR, tugas Anda adalah melakukan analisis forensik terhadap citr
 
 ## Pertanyaan Investigasi (Investigation Questions)
 
-> **Catatan Format Pengiriman:**  
-> Jawaban tidak menggunakan format pembungkus flag (tanpa `FLAG{...}`). Masukkan jawaban sesuai dengan format yang diminta pada masing-masing butir soal secara presisi.
-
 1. Korban menerima pesan teks mencurigakan sesaat sebelum insiden terjadi. Berdasarkan analisis tautan pada pesan tersebut, apa URL pengunduhan langsung (_direct download link_) dari muatan (_payload_) yang dituju?
    - **Format:** URL lengkap (termasuk protokol, contoh: `https://domain.com/path/file.apk`)
 
